@@ -1,0 +1,25 @@
+<h1>ユーザー情報を編集するページです</h1>
+<div class="user-edit">
+  <div class="container">
+    <% @user.errors.full_messages.each do |message| %>
+    <div class="error">
+      <%= message %>
+    </div>
+    <% end %>
+    <%= form_tag("/users/#{@user.id}/update") do %>
+    <div class="form">
+      <div class="form-body">
+        <div>
+          <div>ユーザー名</div>
+           <input name="name" value = "<%= @user.name %>">
+        </div>
+        <div>
+          <div>メールアドレス</div>
+           <input name="email" value = "<%= @user.email %>">
+        </div>
+        <input type="submit" value="送信">
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

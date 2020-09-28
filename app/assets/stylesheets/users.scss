@@ -1,0 +1,82 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.index{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.box{
+  box-shadow: 1px 0 2px 1px #999;
+  width: 100%;
+  max-width: 600px;
+  padding:0;
+  display: table;
+}
+
+.table{
+  width: 500px;
+}
+
+.user-name{
+  height: 60px;
+  width: 100px;
+  display: table-cell;
+  box-shadow: 1px 0 2px 1px #999;
+  padding: 20px;
+}
+
+.user-email{
+  box-shadow: 1px 0 2px 1px #999;
+  padding: 20px;
+  width: 400px;
+  display: table-cell;
+}
+
+.user-email a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-name a {
+  text-decoration: none;
+  color: black;
+}
+
+/* formの共通レイアウト ================================ */
+
+.form{
+  margin: 0 auto;
+  width: 600px;
+  box-shadow: 1px 0 2px 1px #999;
+}
+
+.form-body{
+  padding: 40px;
+}
+
+.form-body textarea{
+  font-size: 20px;
+  padding: 10px;
+  min-height: 140px;
+  border: 1px solid #d8dadf;
+}
+
+/* show============================= */
+
+.users-show{
+  width: 800px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+.show-item{
+  
+  padding: 40px;
+  box-shadow: 1px 0 2px 1px #999;
+}
+
+.menus{
+  float: right;
+}

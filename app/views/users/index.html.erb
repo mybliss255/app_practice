@@ -1,0 +1,16 @@
+<h1>ユーザーを表示するページです</h1>
+
+<div class="main index">
+  <div class="container">
+    <% @users.each do |user| %>
+    <div class="table">
+      <div class="user-name">
+        
+      </div>
+      <div class="user-email">
+        <%= link_to(user.email,"/users/#{user.id}") %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

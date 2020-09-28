@@ -1,0 +1,58 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* posts/index ================================ */
+.posts-index{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.posts_box{
+  box-shadow: 1px 0 2px 1px #999;
+  width: 100%;
+  max-width: 600px;
+  padding:0;
+  display: table;
+}
+
+.posts_user_name{
+  height: 60px;
+  width: 25%;
+  display: table-cell;
+  box-shadow: 1px 0 2px 1px #999;
+  padding: 20px;
+}
+
+.posts-index-item{
+  box-shadow: 1px 0 2px 1px #999;
+  padding: 20px;
+  width: auto;
+  display: table-cell;
+}
+
+.posts-index-item a{
+  text-decoration: none;
+  color: black;
+}
+
+/* posts/show ================================ */
+
+.posts-show{
+  width: 800px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+.show-item{
+  font-size: 28px;
+  padding: 40px;
+  box-shadow: 1px 0 2px 1px #999;
+}
+
+.posted-time{
+  font-size: 16px;
+}
+
+.menus{
+  float: right;
+}

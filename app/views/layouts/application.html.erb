@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>目標達成Apps</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <h2><%= link_to "目標達成アプリ","/" %></h2>
+      </div>
+      <div class="header-list">
+        <ul>
+          <li><%= link_to "このサイトについて","/about" %> </li>
+          <li><%= link_to "目標一覧","/posts/index" %></li>
+          <li><%= link_to "新規投稿","/posts/new" %></li>
+          <li><%= link_to "ユーザー","/users/index" %></li>
+          <li><%= link_to "新規登録","/users/new" %></li>
+        </ul>
+      </div>
+    </header>
+
+    <% if flash[:notice] %>
+    <div class="flash">
+      <%= flash[:notice] %>
+    </div>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

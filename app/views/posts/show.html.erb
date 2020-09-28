@@ -1,0 +1,13 @@
+投稿詳細を表示するサイト
+<div class="posts-show">
+  <div class="conteiner">
+    <div class="show-item">
+      <p><%= @post.content %></p>
+      <p class="posted-time">最終更新日:<%= @post.created_at %></p>
+      <div class="menus">
+        <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+        <%= link_to("削除", "/posts/#{@post.id}/destroy",{method: "post"}) %>
+      </div>
+    </div>
+  </div>
+</div>

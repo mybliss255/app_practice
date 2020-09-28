@@ -1,0 +1,25 @@
+<h1>ユーザー登録をするページ</h1>
+<div class="user-new">
+  <div class="container">
+    <% @user.errors.full_messages.each do |message| %>
+    <div class="error">
+      <%= message %>
+    </div>
+    <% end %>
+    <%= form_tag("/users/create") do %>
+    <div class="form">
+      <div class="form-body">
+        ユーザー名を入力してください
+        <div>
+          <input type ="text" name="name"><%= @user.name %>
+        </div>
+        メールアドレスを入力してください
+        <div>
+          <input type ="text" name="email"><%= @user.email %>
+        </div>
+        <input type="submit" value="送信">
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
